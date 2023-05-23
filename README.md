@@ -55,7 +55,7 @@ Tmux uses a "prefix" to provide access tmux controls. I use the default which is
 ### Bash
 
 For the Git branch on the prompt find you PS1 declaration and replace it with:
-`PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u\[\033[00m\]$(__git_ps1 "(%s)"):\[\033[01;34m\]\w\[\033[00m\]\$ '`
+`PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]$(__git_ps1 "(%s)")\$ '`
 
 Add these lines to the bottom of your `.bashrc` if not already present:
 
